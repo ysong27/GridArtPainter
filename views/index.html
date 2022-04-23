@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../public/css/style.css"> 
+
+</head>
+
+<body>
+  <p>8 Bit Art Drawer / Canvas</p>
+
+  <p>to color in a mouse motion - on click -> mouse enter as well</p>
+
+  <div id="color-container">
+    <div id="palette-container">
+      <label for="palette">Palette</label>
+      <input type="color" id="palette">
+    </div>
+    <div id="color-hexcode-container">
+      <p>Color Hexcode: </p>
+      <p id="color-hexcode"></p>
+    </div>
+    <div id="previously-used-colors">
+      <p>Previously Used Colors:</p>
+    </div>
+  </div>
+  <div id="dimensions-select-container">
+    <label for="dimensions-select">Dimensions:</label>
+    <select id="dimensions-select">
+      <option value="5">5 x 5</option>
+      <option value="10" selected>10 x 10</option>
+      <option value="20">20 x 20</option>
+      <option value="30">30 x 30</option>
+      <option value="40">40 x 40</option>
+      <option value="50">50 x 50</option>
+    </select>
+  </div>
+
+  <button type="button" id="refresh-button">Refresh</button>
+
+  <div id="canvas-container"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="../public/js/canvas.js"></script>
+</body>
+
+</html>
