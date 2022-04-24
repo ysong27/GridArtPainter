@@ -7,14 +7,14 @@ $(document).ready(function () {
       canvas_row += `<div class="block"></div>`;
     }
     for (var j = 0; j < row; j++) {
-      canvas += `<div class="row">${canvas_row}</div>`;
+      canvas += `<div class="grid-row">${canvas_row}</div>`;
     }
     canvas += "</div>";
     return canvas;
   }
 
   function displayCanvas(canvas) {
-    $("#canvas-container").html(canvas);
+    $("#canvas").html(canvas);
   }
 
   function paintBlockOnClick() {
