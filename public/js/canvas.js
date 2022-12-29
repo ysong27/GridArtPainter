@@ -1,3 +1,4 @@
+import { paintBlockOnClick, clearPaintBlockOnDoubleClick } from "./block.js";
 
 function newCanvas(row, col) {
     var canvas = createCanvas(row, col);
@@ -5,7 +6,6 @@ function newCanvas(row, col) {
     paintBlockOnClick();
     clearPaintBlockOnDoubleClick();
 }
-
 
 function createCanvas(row, col) {
     var canvas = "<div>";
@@ -24,18 +24,5 @@ function displayCanvas(canvas) {
     $("#canvas").html(canvas);
 }
 
-
-function paintBlockOnClick() {
-$(".block").on("click", function () {
-    var colorCode = $("#palette").val();
-    $(this).css("background-color", colorCode);
-});
-}
-
-function clearPaintBlockOnDoubleClick() {
-$(".block").on("dblclick", function () {
-    $(this).css("background-color", "white");
-});
-}
 
 export default newCanvas;
