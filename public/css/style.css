@@ -11,24 +11,18 @@
   gap: 10px;
 }
 
+.utility-container {
+  display: flex;
+  align-items: center;
+  border: 3px solid gray;
+  border-radius: 10px;
+  padding: 40px 0px 40px 0px;  
+}
+
 #header-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-}
-
-.grid-row {
-  display: flex;
-}
-
-.block {
-  width: 20px;
-  height: 20px;
-  border: 0.5px solid gainsboro;
-}
-
-.block+.block {
-  border-left: 0;
+  margin: 20px 0 30px 0;
 }
 
 #color-hexcode-container {
@@ -52,22 +46,6 @@
 #palette-container > input {
   width: 200px;
   border-radius: 5px;
-}
-
-#header-container {
-  margin-bottom: 30px;
-}
-
-#canvas {
-  border: 1px solid gray;
-}
-
-.utility-container {
-  display: flex;
-  align-items: center;
-  border: 3px solid gray;
-  border-radius: 10px;
-  padding: 40px 0px 40px 0px;  
 }
 
 #instructions-container > p {
