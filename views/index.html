@@ -18,8 +18,18 @@
         <h1>Grid Art Painter</h1>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-12" id="instructions-container">
+        <p>Instructions</p>
+        <ul>
+          <li>Paint: click</li>
+          <li>Remove paint: double-click</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="row utility-container">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div id="dimensions-select-container">
           <label for="dimensions-select">Dimensions:</label>
           <select id="dimensions-select">
@@ -32,21 +42,12 @@
           </select>  
         </div>
       </div>
-      <div class="col-md-6">
-        <button type="button" class="btn btn-primary" id="refresh-button">Refresh</button>
-      </div>
-    </div>
-    <div class="row utility-container" id="color-container">
       <div class="col-md-4" id="palette-container">
         <label for="palette">Color</label>
         <input type="color" id="palette">
       </div>
-      <div class="col-md-4" id="color-hexcode-container">
-        <p>Hexcode:</p>
-        <p id="color-hexcode"></p>
-      </div>
       <div class="col-md-4">
-        <p>Previously Used Colors:</p>
+        <button type="button" class="btn btn-primary" id="refresh-button">Refresh</button>
       </div>
     </div>
     <div class="row utility-container">
@@ -54,20 +55,12 @@
         <div id="canvas"></div>
       </div>
     </div>
-    <div class="row utility-container">
-      <div class="col-md-12" id="instructions-container">
-        <p>Instructions</p>
-        <ul>
-          <li>Paint: click</li>
-          <li>Remove paint: double-click</li>
-        </ul>
-      </div>
-    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/public/js/canvas.js"></script>
+  <script type="module" src="/public/js/index.js"></script>
+  <script type="module" src="/public/js/canvas.js"></script>
 </body>
 
 </html>
